@@ -1,0 +1,17 @@
+name: PlayerNote
+version: '0.0.1'
+main: org.devnguyen.PlayerNote
+api-version: '1.20'
+load: STARTUP
+authors: [DevNguyen0111]
+description: Allow player note something when playing in server
+website: https://www.devnguyen.xyz/
+depend:
+  - DiscordSRV
+commands:
+  pnote:
+    description: Send a note to the Discord channel
+    usage: /pnote <note>
+    permission: playernote.command.pnote
+    aliases: [pn]
+    permission-message: You don't have permission to use this command
